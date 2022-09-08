@@ -1,12 +1,12 @@
 #include <stdio.h>
-
-
+/**
+ * main - the beginning of the code
+ *
+ * return - the end of the code
+ */
 int main(void)
-
 {
-
-		/*string initialisation*/
-	char Mystr[] = "\"Programming is like building a multilingual puzzle";
-		            puts(Mystr); 
-		    	    return 0;
-}                    
+	char new[52] = "\"Programming is like building a multilingual puzzle";
+	puts(new);
+	return 0;
+}
