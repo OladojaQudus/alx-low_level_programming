@@ -8,21 +8,18 @@
 int main(void)
 
 {
-	int i = '0';
+	int n;
+	char ch;
 
-	while (i <= '9')
+	for (n = 48; n < 58; n++)
 	{
-		putchar(i);
-		i++;
+		putchar(n);
 	}
-	int c = 'a';
-
-		while (c <= 'f')
-		{
-			putchar(c);
-			c++;
-		}
+	for (ch = 'a'; ch <= 'f'; ch++)
+	{
+		putchar(ch);
+	}
 	putchar('\n');
-
-		return (0);
+	
+	return (0);
 }
