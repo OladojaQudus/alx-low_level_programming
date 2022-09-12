@@ -1,11 +1,7 @@
 #include <stdio.h>
 
-#include <time.h>
-
-#include <stdlib.h>
-
 /**
- * main - the program prints three numbers
+ * main - a program
  *
  * Return: 0 if success
  */
@@ -14,27 +10,27 @@ int main(void)
 {
 	int a, b, c;
 
-	for (a = '0'; a <= '9'; a++)
+	for (a = 48; a < 58; a++)
 	{
-		for (b = a + 1; b <= 9; b++)
+		for (b = 49; b < 58; b++)
 		{
-			for (c = b + 1; c <= 9; c++)
+			for (c = 50; c < 58; c++)
+			{
 				if (a < b && b < c)
 				{
 					putchar(a);
 					putchar(b);
 					putchar(c);
 
-					if (c < 7)
+					if (a != 55 || b != 56)
 					{
-
-					putchar(',');
-					putchar(' ');
+						putchar(',');
+						putchar(' ');
 					}
 				}
+			}
 		}
 	}
 	putchar('\n');
-
-	return (0);
+		return (0);
 }
