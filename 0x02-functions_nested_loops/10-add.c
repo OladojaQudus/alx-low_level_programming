@@ -20,4 +20,5 @@ int add(int i, int j)
 	}
 	putchar((k / 10) + '0');
 	putchar((k % 10) + '0');
+	return (0);
 }
