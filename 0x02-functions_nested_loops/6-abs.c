@@ -2,7 +2,7 @@
 
 /**
  * _abs - to print absolute value
- *i: INTEGER
+ *@i: INTEGER
  * Return: 0
  */
 int _abs(int i)
