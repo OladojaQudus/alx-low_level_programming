@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#include <main.h>
+
 /**
  * main - this a program that prints the putchar
  *
