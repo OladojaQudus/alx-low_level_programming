@@ -3,7 +3,7 @@
 /**
  * _islower - vhcks for lower case
  *
- * c - the charactr to test
+ * @c: the charactr to test
  * Return: 0 if false
  */
 
