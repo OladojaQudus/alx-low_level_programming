@@ -1,23 +1,18 @@
-#include <stdio.h>
-
 #include "main.h"
 
 /**
- * main - the program prints a - z
- *
- * Return: (0)
+ * print_alphabet - entry point
+ * Description: Prints the alphabet with _putchar
+ * Return: void
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	int c = 'a';
-
-	while (c <= 'z')
+	char c;
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		putchar(c);
-		c++;
+		_putchar(c);
 	}
-	putchar('\n');
-
-	return (0);
+	_putchar('\n');
 }
+
