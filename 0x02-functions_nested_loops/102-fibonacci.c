@@ -7,26 +7,23 @@
 
 int main(void)
 {
-	int a, b, c, d;
-
-	a = 1;
-	b = 2;
-
-	printf("%d", a);
-	putchar(',');
-	putchar(' ');
-	printf("%d", b);
-	putchar(',');
-	putchar(' ');
-
-	for (d = 1; d <= 50; d++)
+	unsigned long count, i, j, k;	
+	i = 0;
+	j = 1;
+	for (count = 0; count < 50; count++)
 	{
-		c = a + b;
-		printf("%d", c);
-		a = b;
-		b = c;
-		putchar(',');
-		putchar(' ');
+		k = i + j;
+		i = j;
+		j = k;
+
+		printf("%lu", k);
+		if (count == 49)
+			putchar('\n');
+		else
+		{
+			printf(", ");
+		}
 	}
 	return (0);
 }
+
