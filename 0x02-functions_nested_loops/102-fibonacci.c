@@ -12,15 +12,21 @@ int main(void)
 	a = 1;
 	b = 2;
 
-	printf("\n%d", a);
-	printf("\n%d", b);
+	printf("%d", a);
+	putchar(',');
+	putchar(' ');
+	printf("%d", b);
+	putchar(',');
+	putchar(' ');
 
 	for (d = 1; d <= 50; d++)
 	{
 		c = a + b;
-		printf("\n%d", c);
+		printf("%d", c);
 		a = b;
 		b = c;
+		putchar(',');
+		putchar(' ');
 	}
 	return (0);
 }
