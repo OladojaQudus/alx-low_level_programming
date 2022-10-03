@@ -30,18 +30,16 @@ char *argstostr(int ac, char **av)
 	str = (char *)malloc(sizeof(char) * len);
 	if (str == 0)
 	{
-		{
-			free(str);
-			return (0);
-		}
-		i = 0;
-		while (i < ac)
-		{
-			j = 0;
-			while (av[i][j] != 0)
-				str[k] = av[i][j], j++, k++;
-			str[k] = '\n', k++, i++;
-		}
+		free(str);
+		return (0);
+	}
+	i = 0;
+	while (i < ac)
+	{
+		j = 0;
+		while (av[i][j] != 0)
+			str[k] = av[i][j], j++, k++;
+		str[k] = '\n', k++, i++;
 	}
 	str[k] = 0;
 	return (str);
