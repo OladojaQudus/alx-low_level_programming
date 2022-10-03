@@ -30,7 +30,6 @@ char *argstostr(int ac, char **av)
 	str = (char *)malloc(sizeof(char) * len);
 	if (str == 0)
 	{
-		if (str == 0)
 		{
 			free(str);
 			return (0);
